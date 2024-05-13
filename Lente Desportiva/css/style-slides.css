@@ -1,0 +1,92 @@
+@import url('https://fonts.google.com/share?selection.family=Poetsen+One');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poetsen', sans-serif;
+}
+:root{
+    --escura:#06213E;
+    --alarangado:#FFCC00;
+    --branco:#ffffff;
+}
+*{
+    box-sizing: border-box;
+}
+.carrosel{
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    height: 500px;
+    width: 850px;
+    margin: auto;
+}
+
+.conteiner{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+.parte{
+    object-fit: cover;
+    width: 850px;
+    height: 500px;
+}
+
+.des{
+    background-color: var(--escura);
+    height: 10px;
+    width: 200px;
+    margin: auto;
+    border-radius: 30px;
+}
+.rolante{
+
+    background-color: #FFCC00;
+    padding: 5px;
+}
+
+/*Asides*/
+.noticias{
+    display: flex;
+    justify-content: center;
+    gap: 10px ;
+}
+
+.noticias aside{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px;
+    box-shadow: 1px 1px 1px 2px black;
+}
+aside img{
+    width: 400px;
+    height: 300px;
+}
+aside .p{
+    text-align: justify;
+    width: 398px;
+}
+
+aside .p1{
+    text-align: justify;
+    text-indent: 10px;
+    font-size: 1.5rem;
+}
+.noticias1 aside{
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    box-shadow: 1px 1px 1px 2px black;
+}
+.noticias1{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 15px;
+}
+.noticias1 aside img{
+    width: 400px;
+    height: 300px;
+} 
+/*Asides*/
+

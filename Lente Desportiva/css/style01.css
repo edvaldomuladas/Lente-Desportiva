@@ -1,0 +1,97 @@
+@import url('https://fonts.google.com/share?selection.family=Poetsen+One');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poetsen', sans-serif;
+}
+:root{
+    --escura:#06213E;
+    --alarangado:#FFCC00;
+    --branco:#ffffff;
+}
+
+
+.header{
+    background-color: var(--escura);
+    box-shadow: 0px 2px 2px var(--alarangado);
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo img{
+    border-radius: 50%;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.nav-item{
+    margin: 0 55px;
+}
+.nav-link{
+    text-decoration: none;
+    font-size: 1.20rem;
+    color: var(--branco);
+    font-weight: 500;
+}
+.nav-link:hover{
+    font-size: 1.25rem;
+    font-weight: 600;
+    transition: 0.7s;
+    text-decoration: underline;
+    color: #FFCC00;
+}
+.mobile-nav-list, .icon-menu{
+    display: none;
+}
+@media screen and (max-width:790px) {
+    .nav-bar{
+        padding: 1.2rem 3rem ;
+    }
+    .nav-item{
+        display: none;
+    }
+    .icon-menu{
+        display: block;
+    }
+    .mobile-nav-list.open{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    
+    .mobile-nav-list .mobile-nav-item{
+        display: block;
+        padding: 1.2rem ;
+    }
+    .mobile-nav-link{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: var(--branco);
+    font-weight: 200;
+    }
+    .mobile-nav-link:hover{
+        font-size: 1.25rem;
+        font-weight: 600;
+        transition: 0.7s;
+        text-decoration: underline;
+        color: #FFCC00;
+    }
+    button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+
